@@ -168,6 +168,11 @@ clear: both;
   border-bottom-left-radius: 50%;
 }
 
+.timeline > li > .timeline-badge {
+  font-size: 1.7em;
+  vertical-align: middle;
+}
+
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
