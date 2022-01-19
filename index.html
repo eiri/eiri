@@ -7,8 +7,8 @@
     <title>eiri.ca</title>
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Muli" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+
     <link href="style.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -19,9 +19,7 @@
     <div class="jumbotron text-center">
       <div class="blur"></div>
       <a class="unsplash" href="https://unsplash.com/@johnsalzarulo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="photo by John Salzarulo">
-        <span>
-          <i class="fa fa-camera-retro" aria-hidden="true"></i>
-        </span>
+        <span class="iconify" data-icon="entypo:camera" aria-hidden="true"></span>
         <span>by John Salzarulo</span>
       </a>
       <img src="https://secure.gravatar.com/avatar/37ff424a6acf0170bf0c9f52fe9887b0?s=150" class="avatar img-circle">
@@ -45,21 +43,21 @@
           <div class="row text-center">
             <div class="col-md-4">
               <a class="language" href="https://github.com/search?q=user%3Aeiri+language%3AErlang&type=Repositories">
-                <i class="devicon-erlang-plain colored"></i>
+                <span class="iconify" data-icon="logos:erlang" style="font-size: 128px;"></span>
               </a>
               <h3>Erlang</h3>
               <p>for building distributed services</p>
             </div>
             <div class="col-md-4">
               <a class="language" href="https://github.com/search?q=user%3Aeiri+language%3APython&type=Repositories">
-                <i class="devicon-python-plain colored"></i>
+                <span class="iconify" data-icon="logos:python" style="font-size: 128px;"></span>
               </a>
               <h3>Python</h3>
               <p>for scripting and rapid prototypings</p>
             </div>
             <div class="col-md-4">
               <a class="language" href="https://github.com/search?q=user%3Aeiri+language%3AGo&type=Repositories">
-                <i class="devicon-go-plain" style="color: #78CEDC"></i>
+                <span class="iconify" data-icon="logos:gopher" style="font-size: 128px;"></span>
               </a>
               <h3>Go</h3>
               <p>for writing microservices and CLI</p>
@@ -73,18 +71,39 @@
           <h2 class="page-header" id="timeline">My professional experience</h2>
           <ul class="timeline">
 
-          <li>
+          <li class="timeline-inverted">
             <div class="timeline-badge" style="background-color: #466BB0">
-              <i class="fa fa-database" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:ibm-cloud" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">IBM</h4>
-                <p>Advisory Software Developer</p>
+                <p>Cloudant Integrations Advisory Software Developer</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    Oct 2014 - Present
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
+                    July 2020 - Present
+                  </small>
+                </p>
+              </div>
+              <div class="timeline-body">
+                <p>In a search for new challenges I moved to an opposite side of IBM Cloudant and switched from developing backend to writing sdk libraries for it as a part of Integration team. Now I'm writing in four languages: python, typescript, java and golang. Sometimes simultaniously.</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge" style="background-color: #e42528">
+              <span class="iconify" data-icon="logos:couchdb-icon" style="font-size: 0.9em; filter: brightness(7);" aria-hidden="true"></span>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">IBM</h4>
+                <p>Cloudant DBCore Advisory Software Developer</p>
+                <p>
+                  <small class="text-muted">
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
+                    Oct 2014 - July 2020
                   </small>
                 </p>
               </div>
@@ -96,7 +115,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-badge" style="background-color: #5287C4">
-              <i class="fa fa-university" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:finance"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -104,7 +123,7 @@
                 <p>Senior Consultant</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Jan 2011 - Oct 2014
                   </small>
                 </p>
@@ -117,7 +136,7 @@
 
           <li>
             <div class="timeline-badge" style="background-color: #E92036">
-              <i class="fa fa-id-card-o" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:identification" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -125,7 +144,7 @@
                 <p>Consultant</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Sep 2007 - Jan 2011
                   </small>
                 </p>
@@ -138,7 +157,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-badge" style="background-color: #4E0801">
-              <i class="fa fa-rocket" aria-hidden="true"></i>
+              <span class="iconify" data-icon="ic:sharp-rocket-launch" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -146,7 +165,7 @@
                 <p>Founder</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Feb 2006 - Sep 2007
                   </small>
                 </p>
@@ -159,7 +178,7 @@
 
           <li>
             <div class="timeline-badge" style="background-color: #0E7548">
-              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <span class="iconify" data-icon="fa-solid:briefcase" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -167,7 +186,7 @@
                 <p>Programmer-Analyst</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Feb 2005 - Feb 2006
                   </small>
                 </p>
@@ -180,7 +199,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-badge" style="background-color: #DA2A27">
-              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:laptop" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -188,7 +207,7 @@
                 <p>Consultant</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Nov 2003 - Feb 2005
                   </small>
                 </p>
@@ -201,7 +220,7 @@
 
           <li>
             <div class="timeline-badge" style="background-color: #0F6CB5">
-              <i class="fa fa-search" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:search" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -209,7 +228,7 @@
                 <p>Leading Specialist</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     May 2002 - May 2003
                   </small>
                 </p>
@@ -222,7 +241,7 @@
 
           <li class="timeline-inverted">
             <div class="timeline-badge" style="background-color: #1CB1CA">
-              <i class="fa fa-floppy-o" aria-hidden="true"></i>
+              <span class="iconify" data-icon="carbon:satellite-radar" aria-hidden="true"></span>
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
@@ -230,7 +249,7 @@
                 <p>Leading Engineer</p>
                 <p>
                   <small class="text-muted">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    <span class="iconify" data-icon="entypo:calendar" aria-hidden="true"></span>
                     Jan 1999 - May 2002s
                   </small>
                 </p>
