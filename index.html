@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Muli" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ukiyojs@2.0.1/dist/ukiyo.min.js"></script>
 
     <link href="style.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -17,7 +18,7 @@
   </head>
   <body>
     <div class="jumbotron text-center">
-      <div class="blur"></div>
+      <div class="bg"></div>
       <a class="unsplash" href="https://unsplash.com/@johnsalzarulo?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="photo by John Salzarulo">
         <span class="iconify" data-icon="entypo:camera" aria-hidden="true"></span>
         <span>by John Salzarulo</span>
@@ -272,4 +273,9 @@
       </div>
     </footer>
   </body>
+
+  <script type="text/javascript">
+    const image = document.querySelector('.bg');
+    new Ukiyo(image, {speed: 1.25});
+  </script>
 </html>
