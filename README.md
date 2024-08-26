@@ -1,5 +1,3 @@
-# Hi! I am Eric Avdey.
-
 ## Who am I
 
 - By day: Developer of distributed databases at IBM. Helping to bring a sudden, but inevitable AI apocalypse a bit closer every day.
