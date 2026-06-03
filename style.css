@@ -257,6 +257,36 @@ a {
     right: auto;
 }
 
+.timeline-date {
+    position: absolute;
+    top: 31px;
+    left: 54%;
+    width: 42%;
+    text-align: left;
+    color: #777;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.timeline-inverted > .timeline-date {
+    left: auto;
+    right: 54%;
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .timeline-date,
+    .timeline-inverted > .timeline-date {
+        display: none;
+    }
+}
+
+.timeline-heading {
+    color: #000;
+    font-weight: 550;
+}
+
 .timeline-title {
     margin-top: 0;
     color: inherit;
